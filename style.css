@@ -1,0 +1,78 @@
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+hmtl {
+    box-sizing: border-box
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-color: lightgray;
+    font-family: sans-serif;
+    /* centrado */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* centrado */
+}
+
+ul.principal{
+    border-radius: 10px;
+    width: 90%;
+    max-width: 1000px;
+    padding: 10px;
+    background: gray;
+    list-style: none;
+     /* centrado */
+    display: flex;
+    justify-content: space-around;
+         /* centrado */
+}
+
+
+.menu{
+    height: 32px;
+     /* centrado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 3;
+     /* centrado */
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px black;
+}
+
+.social{
+    display: flex;
+       justify-content: center;
+       align-items: center;
+       flex: 1;
+}
+
+@media (max-width: 768px){
+    ul.principal{
+        flex-wrap: wrap;
+        margin: 20px;
+    }
+    .menu {
+        flex-basis: 33%;
+    }
+    .social{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 340px){
+    .menu{
+        flex-basis: 100%;
+    }
+}
